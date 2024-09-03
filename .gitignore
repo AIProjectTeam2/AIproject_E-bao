@@ -1,0 +1,70 @@
+# Python 編譯生成文件
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# 虛擬環境
+venv/
+venv.bak/
+venv3/
+venv3.bak/
+ENV/
+env/
+*.env
+
+# Django 配置和生成文件
+*.log
+*.pot
+db.sqlite3
+media/
+staticfiles/
+
+# Django 的模型和向量文件
+word2vec.zh.300.model/
+svm_model.pkl
+sub0_svm_model.pkl
+sub1_svm_model.pkl
+
+# IDEs 和編輯器
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python egg 文件
+*.egg
+*.egg-info
+
+# 分發文件
+build/
+dist/
+*.egg-info
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 覆蓋率文件
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# 系統生成文件
+.DS_Store
+Thumbs.db
+
+# 其他工具生成文件
+*.bak
+*.tmp
+*.swp
+*.swo

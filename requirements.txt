@@ -1,0 +1,11 @@
+Django
+numpy
+pandas
+random
+gensim
+scikit-learn
+feedparser
+line-bot-sdk
+gunicorn
+python-dotenv
+git+https://github.com/APCLab/jieba-tw.git

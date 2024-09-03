@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5f9; /* 更柔和的藍綠色背景，適合智慧醫療 */
+            color: #2c3e50; /* 深藍色字體 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 水平置中 */
+            justify-content: flex-start; /* 垂直向上置中 */
+            height: 100vh;
+        }
+        h1 {
+            color: #1abc9c; /* 醫療風格的綠色標題 */
+            margin-bottom: 5px;
+            font-size: 5em; /* 放大醫寶字體 */
+        }
+        h2 {
+            color: #1abc9c; /* 綠色標題 */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            text-align: left; /* 文字靠左 */
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin-top: 50px;
+        }
+        .text-section {
+            max-width: 60%;
+        }
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 200px;
+            border: 2px solid #1abc9c; /* 圖片邊框與標題一致 */
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+        }
+    </style>
+</head>
+<body>
+    <h1>醫寶</h1>
+    <h2>智慧健康助理</h2>
+    <div class="content">
+        <div class="text-section">
+            <h2>摘要</h2>
+            <p>本專案旨在開發一個基於LINE的便捷健康咨詢系統，以幫助用戶快速辨識自身病症，並精準地建議應掛號的科別。該系統利用Jieba分詞與LSTM模型對用戶的語音或文字輸入進行分析，結合語言模型的對話功能，綜合考慮用戶的遺傳病史及過往特殊症狀，從而提升就醫效率並減少非必要的醫療訪問。系統的目標是確保用戶能夠在第一時間選擇正確的就醫途徑，避免因延誤治療而導致病情惡化。初步測試結果顯示，該系統具備廣泛的應用潛力，並可針對不同使用者群體進行進一步優化。</p>
+            <p>掃描下方的QRCode來加入我們的LineBot：</p>
+        </div>
+        <div class="qr-section">
+            <img src="{% static 'images/linebot_qr.png' %}" alt="LineBot QRCode">
+        </div>
+    </div>
+</body>
+</html>
+
