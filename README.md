@@ -4,8 +4,6 @@ E-bao is a small software that allows users to inquire about their current sympt
 
 ---
 
-# AIproject_E-bao
-
 這是一個基於 Django 和 LINE Bot API 的智能醫療助手系統，旨在幫助用戶根據症狀進行初步的疾病分類並提供醫療機構資訊。系統使用了機器學習模型進行症狀分類，並能提供來自衛生署的公告和附近醫療機構的資訊。
 
 ## 功能
@@ -118,10 +116,5 @@ E-bao is a small software that allows users to inquire about their current sympt
 - **`userdict-corpus-v2.txt`**: 自定義字典。
 - **`stopwords-zh-v2.txt`**: 繁體中文停用詞列表。
 
-## 授權
-
-此專案使用 [MIT 授權](LICENSE)進行授權。
-
 ---
 
-如果還有其他需要調整或添加的內容，隨時告訴我！
